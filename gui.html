@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microfluidics Pump Control</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="container">
+    <h1 class="heading">Microfluidics Pump Control</h1>
+    <div class="control-panel">
+      <div class="motor-control">
+        <h2 class="motor-heading">Fluid A</h2>
+        <div class="fluid-control">
+          <div class="input-group">
+            <input type="number" class="value-input" placeholder="Enter value" min="0">
+            <span class="unit-label">ml</span>
+            <button class="dispense-button">Dispense</button>
+          </div>
+          <div class="input-group">
+            <input type="number" class="value-input" placeholder="Enter value" min="0">
+            <span class="unit-label">mm</span>
+            <select class="direction-select">
+              <option value="forward">Forward</option>
+              <option value="backward">Backward</option>
+            </select>
+            <button class="jog-button">Jog</button>
+          </div>
+        </div>
+      </div>
+      <div class="motor-control">
+        <h2 class="motor-heading">Fluid B</h2>
+        <div class="fluid-control">
+          <div class="input-group">
+            <input type="number" class="value-input" placeholder="Enter value" min="0">
+            <span class="unit-label">ml</span>
+            <button class="dispense-button">Dispense</button>
+          </div>
+          <div class="input-group">
+            <input type="number" class="value-input" placeholder="Enter value" min="0">
+            <span class="unit-label">mm</span>
+            <select class="direction-select">
+              <option value="forward">Forward</option>
+              <option value="backward">Backward</option>
+            </select>
+            <button class="jog-button">Jog</button>
+          </div>
+        </div>
+      </div>
+      <div class="motor-control">
+        <h2 class="motor-heading">Flush</h2>
+        <div class="fluid-control">
+          <div class="input-group">
+            <input type="number" class="value-input" placeholder="Enter value" min="0">
+            <span class="unit-label">ml</span>
+            <button class="dispense-button">Dispense</button>
+          </div>
+          <div class="input-group">
+            <input type="number" class="value-input" placeholder="Enter value" min="0">
+            <span class="unit-label">mm</span>
+            <select class="direction-select">
+              <option value="forward">Forward</option>
+              <option value="backward">Backward</option>
+            </select>
+            <button class="jog-button">Jog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Include Firebase SDK via CDN -->
+  <script src="node_modules/firebase/firebase-app.js"></script>
+  <script src="node_modules/firebase/firebase-database.js"></script>
+  
+  <!-- Include your JavaScript file -->
+  <script src="nano.js"></script>
+</body>
+</html>
