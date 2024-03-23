@@ -1,1 +1,2 @@
-# microfluidics-pump-control
+# Microfluidics Pump Control
+### Project by Sharjeel Don
